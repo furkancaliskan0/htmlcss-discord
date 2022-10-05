@@ -21,7 +21,7 @@ h2{
 
 /* header */
 header {
-    height: 455px;
+    height: 460px;
     background-image: url("../img/jumbo.png");
     background-size: cover;
     background-position: center;
@@ -48,11 +48,9 @@ header {
     }
 
     .text-header > h2{
+      font-size: 45px;
       margin-bottom: 20px;
       color: white;
-      line-height: 162%;
-
-
     }
 
     .btn-header{
@@ -77,24 +75,30 @@ header {
       /* background-color: yellow; */
   }
 
+  .btn-dowload:hover{
+    color: #212427;
+    box-shadow: opx 8px 11px rgba(0,0,0,0.5);
+  }
+
   .btn-open{
     border: 0px;
-    padding: 14px 19px;
+    padding: 15px 20px;
     border-radius: 32px;
-    background-color: #272c30;
+    background-color: #32383d;
     color: white;
     font-size: 17px;
     margin-left: 22px;
     cursor: pointer;
     /* DEBUG */
     /* background-color: yellow; */
-}
+  }
 
-
-
-
-       
-       .btn-header >  .btn-open{
+  .btn-open:hover{
+    box-shadow: 0px 8px 12px rgba(77, 74, 74, 0.3);
+    background-color: #3b3e44;
+    
+  }
+  .btn-header >  .btn-open{
         width: 50%;
         height: 100%;
         /* DEBUG */
@@ -113,9 +117,21 @@ nav {
 }
       nav >  .icona{
         width: 10%;
+        align-items: center;
         /* DEBUG */
         /* background-color: chartreuse; */
 
+      }
+      nav > .btn-logo > a {
+        color:rgba(0,0,0,0.5);
+        background-color: white;
+        padding: 12px 17px;
+        border-radius: 32px;
+        text-decoration: none;
+      }
+      nav > .btn-logo > a:hover{
+        color:#5461eb;
+        box-shadow: 0px 9px 12px rgba(2, 2, 2, 0.3);
       }
 
       nav> .btn-reg{
@@ -140,13 +156,38 @@ nav {
         color: white;
         font-size: 18px;
       }
-        
-      
 
+      nav >  ul > li > a:hover{
+        text-decoration: underline;
+      }
 
+/* main rules */
+.wave-1{
+  opacity: 12%;
+  position: absolute;
+  bottom: 0px;
+}
 
+.wave-container.one{
+  background-color: white;
+  position: relative;
+}
 
-/* Main Rules */
+.wave-container.two{
+  background-color: white;
+  position: relative;
+  margin-bottom: 82px;
+}
+.bg-grey{
+  padding: 110px 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.bg-white{
+  padding: 160px 0;
+}
+.bd-grey > .sezione-4-main{
+  padding-botton:50px;
+}
 
 .bg-grey{
     padding: 150px 0;
@@ -170,6 +211,7 @@ nav {
     margin: auto;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     /* DEBUG */
     /* background-color: blueviolet; */
   }
@@ -182,8 +224,22 @@ nav {
 
   .sezione-1-main > .text{
     flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 44px;
+    justify-content: center;
     /* DEBUG */
     /* background-color: yellow; */
+  }
+
+  .sezione-1-main > .text > h2{
+    font-size: 44px;
+    margin-bottom: 27px;
+  }
+
+  .sezione-1-main > .text > p{
+    font-size: 20px;
+   line-height: 150%;
   }
 
   .sezione-2-main{
@@ -192,142 +248,282 @@ nav {
     margin: auto;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     /* DEBUG */
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
   }
   .sezione-2-main > .image{
     flex-basis: 60%;
     /* DEBUG */
-    background-color: green;
+    /* background-color: green; */
   }
 
   .sezione-2-main > .text{
-    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 38px;
+    flex-basis: 38%;
     /* DEBUG */
-    background-color: yellow;
+    /* background-color: yellow; */
   }
+
+  .sezione-2-main > .text > h2{
+   margin-bottom: 28px;
+   font-size: 44px;
+  }
+
+  .sezione-2-main > .text > p{
+    font-size: 18px;
+    line-height: 138%;
+   }
 
   .sezione-3-main{
     width: 82%;
     min-height: 352px;
     margin: auto;
     display: flex;
+    align-items: flex-start;
     justify-content: center;
     /* DEBUG */
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
   }
 
   .sezione-3-main > .image{
     flex-basis: 60%;
     /* DEBUG */
-    background-color: green;
+    /* background-color: green; */
   }
 
   .sezione-3-main > .text{
-    flex-basis: 40%;
+    flex-basis: 42%;
+    margin-top: 42px;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
     /* DEBUG */
-    background-color: yellow;
+    /* background-color: yellow; */
   }
+
+
+  .sezione-3-main > .text > h2{
+    margin-bottom: 28px;
+    font-size: 44px;
+   }
+ 
+   .sezione-3-main > .text > p{
+     font-size: 20px;
+     line-height: 144%;
+    }
 
   .sezione-4-main{
     width: 82%;
     min-height: 352px;
-    margin: auto;
+    margin: 0 auto 82px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
     /* DEBUG */
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
   }
 
   .sezione-4-main > .image{
-    flex-basis: 60%;
+    flex-basis: 72%;
     /* DEBUG */
-    background-color: green;
+    /* background-color: green; */
   }
 
   .sezione-4-main > .text{
-    flex-basis: 40%;
+    flex-basis: 33%;
+    margin-bottom: 27px;
     /* DEBUG */
-    background-color: yellow;
+    /* background-color: yellow; */
   }
+
+  .sezione-4-main > .text > h2{
+    margin-bottom: 28px;
+    font-size: 44px;
+   }
+ 
+   .sezione-4-main > .text > p{
+     font-size: 20px;
+     line-height: 144%;
+    }
 
 
   .sezione-5-main{
     width: 82%;
-    min-height: 170px;
+    min-height: 172px;
     margin: 0  auto;
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
     /* DEBUG */
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
   }
-
-  .sezione-5-main > .btn-dowload{
-    flex-basis: 50%;
-    /* DEBUG */
-    background-color: green;
-  }
-
   .sezione-5-main > .text{
-    flex-basis: 40%;
+    width: 105%;
+    background-image: url("../img/stars.svg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     /* DEBUG */
-    background-color: yellow;
+    /* background-color: red; */
+}
+
+  .sezione-5-main > .dowload{
+    flex-basis: 50%;
+    align-items: center;
+    display: flex;
+    flex-basis: 54%;
+    /* DEBUG */
+    /* background-color: green; */
   }
 
+  .sezione-5-main > .dowload > a{
+    font-size: 18px;
+    color: white;
+    border-radius: 33px;
+    text-decoration: none;
+    padding: 14px 20px;
+    background-color: #5d69ee;
+  }
 
-/* parte interna */
-
-
-
-
-
-     /* menù contestuale */
-     
-
-
-
-     /* blocco contenuti principale */
-    
+  .sezione-5-main > .dowload > a:hover{
+    box-shadow: 0px 7px 10px rgba(3, 3, 3, 0.5);
+    background-color: #7e88f5;
+  }
 
 /* footer */
 footer  {
     height: 500px;
-    background-color: pink;
+    background-color: #1a1c1f;
 }
 
 .sezione-1-footer{
-    height: 490px;
-    background-color: aqua;
-
+    height: 405px;
+    display: flex;
+    justify-content: space-evenly;
 }
    .sezione-1-footer > div{
-    flex-basis: calc(70% / 4);
-    text-align: center;
-    /* DEBUG */
-    background-color: blue;
-    border: 1px solid black;
+    flex-basis: calc(78% / 4);
    }
+
+   .sezione-1-footer > *{
+    padding: 42px 17px 0px;
+   }
+
+
+   .sezione-1-footer a{
+    display: block;
+   }
+
+   #col-grande{
+    flex-basis: 25%;
+    color: white;
+    
+}
+
+    #col-grande > h2{
+        font-size: 32px;
+        color: #7289d6;
+    }
+
+
+    .lingua{
+        margin: 14px 0 17px;
+    }
+
+    #col-grande > .lingua > img{
+        width: 20px;
+        vertical-align: middle;
+    }
+
+    #col-grande > .lingua > a{
+        text-decoration: none;
+        color: white;
+        display: inline;
+        font-size: 12px;
+    }
+
+    #col-grande > .icone > a{
+        display: inline;
+        margin: 0 7px;
+        text-decoration: none;
+        color: white;
+    }
+
+
+.col-piccola{
+    line-height: 180%;
+}
+
+    .col-piccola > .col-title{
+       color: #788eda;
+       font-family: 'Whitney Semibold', sans-serif;
+       font-size: 14px;
+    }
+
+    .col-piccola > a{
+        text-decoration: none;
+        color: #d5dbd1;
+        font-size: 14px;
+    }
+
+    .col-piccola > a:hover{
+        text-decoration: underline;
+    }
+
+
+
+
 
 .sezione-2-footer{
-    height: 490px;
+    height: 110px;
     display: flex;
     justify-content: space-between;
+    border-top: 1px solid black;
+    padding-top: 22px;
     /* DEBUG */
-    background-color: brown;
+    /* background-color: brown; */
 
 }
-   .sezione-2-footer > .icona{
-    width: 11%;
-    /* DEBUG */
-    background-color: darkgreen;
+   .sezione-2-footer > .logo{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
    }
-   
    .sezione-2-footer > .btn-reg{
     width: 11%;
     /* DEBUG */
-    background-color: indigo;
-   }  
+    /* background-color: indigo; */
+   }
+
+   .sezione-2-footer > .btn-reg > a{
+    padding: 12px 16px;
+    font-size: 14px;
+    border-radius: 32px;
+    text-decoration: none;
+    background-color: #5461e6;
+    color: white;
+   }
+
+   .sezione-2-footer > .btn-reg > a:hover{
+    background-color: #757ee7;
+    box-shadow: 0px 7px 10px rgba(1, 1, 1, 0.5);
+   }
+
+
+   
+
+
+
 
 
 
